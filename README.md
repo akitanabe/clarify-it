@@ -30,6 +30,22 @@ skills/clarify-it/
 `SKILL.md` が規範本体で、Specification / Method / Casebook を含みます。`SKILL.md` 単体で完結して動作し、
 `references/philosophy.md` は矛盾や想定外ケースで設計意図を確認するための非規範 reference です。
 
+## Documents
+
+`docs/` は Skill 化する前の原文です。
+
+```text
+docs/
+├─ philosophy.md      # 基本理念の正本
+└─ specification.md   # Specification / Method / Casebook の原文
+```
+
+`docs/philosophy.md` が理念の正本で、`src/references/philosophy.md` は同じ理念を Skill 実行時の参照向けに
+圧縮・改編した派生です。理念そのものを変更する場合は `docs/` を起点にしてください。
+
+`docs/` は Gunte の管理外のため、`docs/` と `src/` の乖離は `gunte check` では検知されません。src 側へ
+反映するかどうかは、原文を改訂するたびに個別に判断します。
+
 ## Development
 
 `skills/` 配下は [Gunte](https://github.com/akitanabe/gunte) の生成物です。直接編集せず、`src/` の
