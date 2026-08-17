@@ -1,0 +1,310 @@
+{
+  "spec_version": 2,
+  "semantic_inputs": [
+    "gunte.toml",
+    "contracts.toml",
+    "shared/skill/clarify-it/SKILL.md",
+    "shared/skill/clarify-it/references/philosophy.md"
+  ],
+  "contracts": [
+    {
+      "id": "clarify-it-invocation-6c2d7dfc4ca5",
+      "sha256": "50c8ae68ee64c36b27c3d99c52b369352e42430ae233606885d0864ff6861990"
+    },
+    {
+      "id": "clarify-it-self-contained-886f2e1c11d8",
+      "sha256": "9c3be8b64e8ef662c41b9a2e97520ec35f998b81b306f3a26024957d2fda0707"
+    },
+    {
+      "id": "clarify-it-normative-3f14071064d8",
+      "sha256": "e6a88b776cc9f99e178d60dd4e65c4e9f82717935b07d5bfc938e916039d7160"
+    },
+    {
+      "id": "clarify-it-philosophy-00b1c9c2e242",
+      "sha256": "6cb070b0cdafc71dacf40b85099bf9a4284bc8ea9e3439ef98b98f62d5487a54"
+    },
+    {
+      "id": "clarify-it-recovery-data-9099d521dbcb",
+      "sha256": "6263ed9d2ab565e579c0735a1580a6fa782c2b2977089bf27b8c82c8f7389734"
+    },
+    {
+      "id": "clarify-it-responsibility-a88edc37e56e",
+      "sha256": "11bb7081ce5cd37486cd754530396859e19bc826230aab2328afae92ef07c305"
+    },
+    {
+      "id": "clarify-it-hdp-bc5c2afe5b3c",
+      "sha256": "2664316e0d4c8ecd90d7189fc3ce46eed2abf44667f71803aee0efb7c8c7cc3e"
+    },
+    {
+      "id": "clarify-it-hdp-limit-381b3d9932af",
+      "sha256": "7e1ed1f2f488206a00b0f23fdf68e22a51fca7b968f1de3661220424a0cf2934"
+    },
+    {
+      "id": "clarify-it-context-f20c74f92169",
+      "sha256": "95fcc11b672c28e2cec379a1a7106c788b8cb14be2ad84466aa5ff7ee1416428"
+    },
+    {
+      "id": "clarify-it-method-0931f629e4d9",
+      "sha256": "2c05f965e10de8ba7add399d3da3d4a324b505842cde39bcb39313b49d14cc44"
+    },
+    {
+      "id": "clarify-it-reconstruct-ebd6f679e8f8",
+      "sha256": "b196afe6ba71d2effb64e04664d6997ff22f19c9e6530741296a80eb45ab6e93"
+    },
+    {
+      "id": "clarify-it-ok-recommendation-351ba20c50f8",
+      "sha256": "41c21e91dabd8044e526e7b66282a4b5cc61d3c504c5bff8e212e37ca6067b8b"
+    },
+    {
+      "id": "clarify-it-recommendation-update-a40d00761522",
+      "sha256": "b0c23be12ecc797ea037c5e204c5479f53e233efb6fa16b2cf7b2add357e7b92"
+    },
+    {
+      "id": "clarify-it-recompress-a68fba21f6fa",
+      "sha256": "a427e5cf0a6fb9abb1275397f2b3ec9284c156538e4aba2ee5426b197ce20dad"
+    },
+    {
+      "id": "clarify-it-completion-status-fcb37d0bf645",
+      "sha256": "8dc4e89955b10d69924bd0c92c7034ad3ccc7e09a833c84f610c5de851b90e51"
+    },
+    {
+      "id": "clarify-it-natural-output-c90618121b77",
+      "sha256": "38da3e547585a13070f5e3feaa79b215a8eceb1c809f9ab59efc8c380f0b7593"
+    },
+    {
+      "id": "clarify-it-action-boundary-9a657d37cb69",
+      "sha256": "10482a65b6b4be8fd4d2c03b393d0d7675bd2cbfb98bee9b1732e46c3998b961"
+    },
+    {
+      "id": "clarify-it-casebook-bb598c459c49",
+      "sha256": "8c60d455e538af1cc890f46f64f3ff72671fe1621f4b86a6eec4bf9760ec4652"
+    },
+    {
+      "id": "clarify-it-no-external-loader",
+      "sha256": "a0eaa7153ed34f9d6584bc336acf3ffd3b493ba5bab15723034dbe3392589235"
+    },
+    {
+      "id": "clarify-it-no-fixed-schema",
+      "sha256": "efe8ad1b5f2cc9f5ef867b12e2b89270af4564473bee6090850a25cd326fb7ac"
+    },
+    {
+      "id": "clarify-it-no-ledger",
+      "sha256": "0909a9980023520af0cf53a0e99270f95f5678e1182a780ef165d85f02c016d5"
+    },
+    {
+      "id": "clarify-it-no-artifact-action",
+      "sha256": "21d10db775249d14cc9fa8d66429b56a04d79d239353fa9c51601b91321d0809"
+    },
+    {
+      "id": "clarify-it-no-issue-action",
+      "sha256": "402b5ad6d24987306480b67811c384c78495bd7a6b7e9ef55409ee01e26ae3d0"
+    },
+    {
+      "id": "clarify-it-no-implementation",
+      "sha256": "ae72c54c4aa337ffd3d076d1a57840122d212ce281bb25273b718fc66c3067e3"
+    },
+    {
+      "id": "clarify-it-no-followup",
+      "sha256": "5711abc8a9310e5917f9559eedb1b1a771c69cecdce16b3ce1a2b060d5428b40"
+    },
+    {
+      "id": "clarify-it-start-boundary-review-975d358d0210",
+      "sha256": "9f67bc992e70ff063926df96a55ee58bd64729c6149924c2bbec6115049e69e0"
+    },
+    {
+      "id": "clarify-it-philosophy-reference-positioning-f310db13bae1",
+      "sha256": "59793164956f7f6d6d2da489e3648e7268edd958ab6351b5f368d8126fea2406"
+    },
+    {
+      "id": "clarify-it-philosophy-reference-path-c08e0cc3e1b8",
+      "sha256": "d6ef75ab84da0df94a464a45a03991a5ab2a9647b6370ac0b6755cb00c88192c"
+    },
+    {
+      "id": "clarify-it-philosophy-introduction-c1ca87544d59",
+      "sha256": "378dc74c2bdbaf145251ee61700bed38c9355485460709dd89680b8b79f23362"
+    },
+    {
+      "id": "clarify-it-philosophy-nonnormative-4e5ed89d147e",
+      "sha256": "2e0050f8e7f025f4536c8922657a94663f8090090a62bc4be6a22b6d26ffee77"
+    },
+    {
+      "id": "clarify-it-philosophy-hierarchy-da05df90c71e",
+      "sha256": "2dca2d7ae4deb445a964a45ee5e16826f90cf0a07fa262890bd12bca440bf43e"
+    },
+    {
+      "id": "clarify-it-philosophy-recovery-73928c39cfa0",
+      "sha256": "6e7cd3c32c0344ee92d2fb8da120cfcf3d005ee3d727ca08a329045829e88e74"
+    },
+    {
+      "id": "clarify-it-philosophy-local-reference-95422ab53cbd",
+      "sha256": "4048d51702d7cf6fe11d7653700a8e11512d2e3dfdcaabe65c9bef4a6f997664"
+    },
+    {
+      "id": "clarify-it-philosophy-caller-return-3be35ea7b9d3",
+      "sha256": "648741a04132da9d334c882fd0f0de7f3eea1676ce55e93fe16c203861ab07d9"
+    },
+    {
+      "id": "clarify-it-hdp-candidate-multiple-d143a7e8540c",
+      "sha256": "6c4d26da7830a9857465a6df465f6a1126c4017bbc5ff9bbc92d74096eb0b23f"
+    },
+    {
+      "id": "clarify-it-hdp-candidate-responsibility-bcdf2d675a93",
+      "sha256": "7c79bfd633cf24bfb9026d9bdf8c2e5404d143fd98dd88d69d10d1c634ec3f12"
+    },
+    {
+      "id": "clarify-it-hdp-candidate-public-6d87779b5969",
+      "sha256": "d8eb91f8b753be5beb4fa8e255d5fb50f714a05c0f191ba9e9924fe5e4277a04"
+    },
+    {
+      "id": "clarify-it-hdp-candidate-cost-b662d6976bab",
+      "sha256": "1754ad02b65688eff39e74d238a36735393f854b78c0bd6e4169a41d8c95ca21"
+    },
+    {
+      "id": "clarify-it-hdp-candidate-prior-99685f5578db",
+      "sha256": "fc88526d0ebe069c4eb5ef0537c8cf85cef44e2193037b48e8c4926a8b508d6e"
+    },
+    {
+      "id": "clarify-it-hdp-candidate-intent-0f48e2969a7a",
+      "sha256": "f878b5fd5400060be6a0580f124b0323024c1cbc2612b80ae44701340eb10e4d"
+    },
+    {
+      "id": "clarify-it-hdp-sufficient-db810298520d",
+      "sha256": "bd8d6a780fa29db9a9bca9831acb874f999b020482396998eaad20166090807d"
+    },
+    {
+      "id": "clarify-it-hdp-derivable-8b501994c211",
+      "sha256": "4db77ef0e15e2e998b2cbb35b50c1cc355501f42d88856f6fad5a43d8cead74a"
+    },
+    {
+      "id": "clarify-it-presentation-axis-21dd10e7ac5c",
+      "sha256": "87c86045b28746dda04520826f72746fed08350c47db3347013a55ca6a16870d"
+    },
+    {
+      "id": "clarify-it-presentation-order-483aab823fa9",
+      "sha256": "38c0691f3a95dabc4918f5571ec4498b6d57ef553df18b7d1aaac63f62eca0d4"
+    },
+    {
+      "id": "clarify-it-presentation-recommendation-order-3a6ccaad08ab",
+      "sha256": "dd9cf6fe64a0ec55703106ef23437991a52b88516ac4fb69f7367ad756006f48"
+    },
+    {
+      "id": "clarify-it-presentation-multiturn-366be9a58145",
+      "sha256": "e0dcac720a1a1c5f02c870ca1d9a3eab29d7bc5887c41e2678a053e4a2c29c88"
+    },
+    {
+      "id": "clarify-it-presentation-neutral-b12ea9584821",
+      "sha256": "d178404403c62ac935dd5cb78eab4d9b319f8a24c000e7db57f9d5a8022137c4"
+    },
+    {
+      "id": "clarify-it-presentation-policy-8525718f3c22",
+      "sha256": "600735db30319d7feaf68988d21473e53e09c051e99fa378107b05e07aa8e260"
+    },
+    {
+      "id": "clarify-it-selection-no-score-a55549396c92",
+      "sha256": "b146f82a5fc262f467f0cf06bcace2132c6955823f6bdd95d64998d3765390e9"
+    },
+    {
+      "id": "clarify-it-selection-priority-6d10483e40e2",
+      "sha256": "690de33b512521d7a97de98e4a9803ed9a34c39ecadc71402ad2ea5b06809ced"
+    },
+    {
+      "id": "clarify-it-evidence-identity-6a3986f41749",
+      "sha256": "a8ea8657b0eaca308131276fff1ce83852369a652f35f6867bfe9abbf2ec9ac1"
+    },
+    {
+      "id": "clarify-it-consistency-diff-8745d0b78738",
+      "sha256": "a19416f86decd0da66ab4bd0323d628536ea2d59be1557519b560723bcd54152"
+    },
+    {
+      "id": "clarify-it-consistency-confirm-b8cd29f71982",
+      "sha256": "5805f496b9d39422b58154ceb34dcc69b3801732b71b61369a59d5feaa84d514"
+    },
+    {
+      "id": "clarify-it-change-no-justification-067acffe875a",
+      "sha256": "062be1396bb58cb2a1a730eaf50594b5aabbe736da38c0113d9439da1a5bcb28"
+    },
+    {
+      "id": "clarify-it-reconstruction-direction-ab8da3059506",
+      "sha256": "155a04a7e84f49b5ffdd7a4d0d9ec30f63bbf0b9c426485c8f5cf6417022d185"
+    },
+    {
+      "id": "clarify-it-stop-anytime-80e6ed887110",
+      "sha256": "f67f41c9ba15760eee698cef8c12d7881d429a6872a379945985d79d1b7abe3a"
+    },
+    {
+      "id": "clarify-it-low-information-signal-8eb79ad8fcf6",
+      "sha256": "c01822426291d80726f363b291cb5d98e6a115ad13c893c7f78e3a2f48c59002"
+    },
+    {
+      "id": "clarify-it-completed-cleanup-f5d916ec3749",
+      "sha256": "ca1589909162d9f0fec2afedbe418188be2d590f3dfdbb0063784e17d90c9783"
+    }
+  ],
+  "declarations": [
+    {
+      "kind": "span",
+      "id": "clarify-it-invocation",
+      "path": "shared/skill/clarify-it/SKILL.md"
+    },
+    {
+      "kind": "span",
+      "id": "clarify-it-start-boundary",
+      "path": "shared/skill/clarify-it/SKILL.md"
+    },
+    {
+      "kind": "span",
+      "id": "clarify-it-normative-hierarchy",
+      "path": "shared/skill/clarify-it/SKILL.md"
+    },
+    {
+      "kind": "span",
+      "id": "clarify-it-philosophy-reference",
+      "path": "shared/skill/clarify-it/SKILL.md"
+    },
+    {
+      "kind": "span",
+      "id": "clarify-it-responsibility",
+      "path": "shared/skill/clarify-it/SKILL.md"
+    },
+    {
+      "kind": "span",
+      "id": "clarify-it-human-decision-point",
+      "path": "shared/skill/clarify-it/SKILL.md"
+    },
+    {
+      "kind": "span",
+      "id": "clarify-it-decision-context",
+      "path": "shared/skill/clarify-it/SKILL.md"
+    },
+    {
+      "kind": "span",
+      "id": "clarify-it-method",
+      "path": "shared/skill/clarify-it/SKILL.md"
+    },
+    {
+      "kind": "span",
+      "id": "clarify-it-completion",
+      "path": "shared/skill/clarify-it/SKILL.md"
+    },
+    {
+      "kind": "span",
+      "id": "clarify-it-action-boundary",
+      "path": "shared/skill/clarify-it/SKILL.md"
+    },
+    {
+      "kind": "span",
+      "id": "clarify-it-casebook",
+      "path": "shared/skill/clarify-it/SKILL.md"
+    },
+    {
+      "kind": "span",
+      "id": "clarify-it-philosophy-introduction",
+      "path": "shared/skill/clarify-it/references/philosophy.md"
+    },
+    {
+      "kind": "span",
+      "id": "clarify-it-philosophy-positioning",
+      "path": "shared/skill/clarify-it/references/philosophy.md"
+    }
+  ]
+}
