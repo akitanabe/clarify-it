@@ -47,6 +47,24 @@ docs/
 `docs/` は Gunte の管理外のため、`docs/` と `src/` の乖離は `gunte check` では検知されません。src 側へ
 反映するかどうかは、原文を改訂するたびに個別に判断します。
 
+## Philosophy
+
+`clarify-it` の設計判断は [`docs/philosophy.md`](./docs/philosophy.md) の理念に従います。中核は次の一文です。
+
+> Human は結果に責任を持ち、Agent はその結果へ至る対話の整合性に責任を持つ。
+
+`SKILL.md`、contract、Method のいずれを変更する場合も、着手前に必ず `docs/philosophy.md` を参照してください。
+この repository の変更が妥当かどうかは、動くかどうかではなく、理念と整合するかどうかで決まります。特に次の
+判断は、理念を読まずに決められません。
+
+- ある事項を Human に問うのか、Agent が自分で決めるのか
+- 規則を追加するのか、上位概念を更新するのか
+- Method をどこまで詳細化してよいのか
+
+ただし理念は非規範です。そこから Specification に無い MUST を直接導出はしません。矛盾や想定外ケースに直面した
+とき、既存の規則が何を守ろうとしていたかを回復するために読みます。理念そのものを変える必要が生じた場合は、
+`docs/philosophy.md` を改訂したうえで Specification へ明示的に反映します。
+
 ## Development
 
 `skills/` 配下は [Gunte](https://github.com/akitanabe/gunte) の生成物です。直接編集せず、`src/` の
