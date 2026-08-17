@@ -6,8 +6,8 @@ version = "0.1.0"
 
 [sources]
 files = [
-  "src/skill/clarify-it/SKILL.md",
-  "src/skill/clarify-it/references/philosophy.md",
+  "src/clarify-it/SKILL.md",
+  "src/clarify-it/references/philosophy.md",
 ]
 managed_roots = ["src"]
 
@@ -18,13 +18,13 @@ output_root = "."
 managed_roots = ["skills"]
 
 [[targets.skills.rules]]
-match = "src/skill/*/SKILL.md"
+match = "src/*/SKILL.md"
 path = "skills/{1}/SKILL.md"
 profile = "markdown+yaml-frontmatter-v1"
 header = "<!-- Generated from src/. Do not edit directly. -->"
 
 # Why Not: philosophy.md は Human が直接読む reference のため、生成 header を付けない。
 [[targets.skills.rules]]
-match = "src/skill/clarify-it/references/philosophy.md"
+match = "src/clarify-it/references/philosophy.md"
 path = "skills/clarify-it/references/philosophy.md"
 profile = "markdown-v1"
