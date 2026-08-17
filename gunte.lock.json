@@ -3,8 +3,8 @@
   "semantic_inputs": [
     "gunte.toml",
     "contracts.toml",
-    "shared/skill/clarify-it/SKILL.md",
-    "shared/skill/clarify-it/references/philosophy.md"
+    "src/skill/clarify-it/SKILL.md",
+    "src/skill/clarify-it/references/philosophy.md"
   ],
   "contracts": [
     {
@@ -244,67 +244,67 @@
     {
       "kind": "span",
       "id": "clarify-it-invocation",
-      "path": "shared/skill/clarify-it/SKILL.md"
+      "path": "src/skill/clarify-it/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-start-boundary",
-      "path": "shared/skill/clarify-it/SKILL.md"
+      "path": "src/skill/clarify-it/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-normative-hierarchy",
-      "path": "shared/skill/clarify-it/SKILL.md"
+      "path": "src/skill/clarify-it/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-philosophy-reference",
-      "path": "shared/skill/clarify-it/SKILL.md"
+      "path": "src/skill/clarify-it/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-responsibility",
-      "path": "shared/skill/clarify-it/SKILL.md"
+      "path": "src/skill/clarify-it/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-human-decision-point",
-      "path": "shared/skill/clarify-it/SKILL.md"
+      "path": "src/skill/clarify-it/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-decision-context",
-      "path": "shared/skill/clarify-it/SKILL.md"
+      "path": "src/skill/clarify-it/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-method",
-      "path": "shared/skill/clarify-it/SKILL.md"
+      "path": "src/skill/clarify-it/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-completion",
-      "path": "shared/skill/clarify-it/SKILL.md"
+      "path": "src/skill/clarify-it/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-action-boundary",
-      "path": "shared/skill/clarify-it/SKILL.md"
+      "path": "src/skill/clarify-it/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-casebook",
-      "path": "shared/skill/clarify-it/SKILL.md"
+      "path": "src/skill/clarify-it/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-philosophy-introduction",
-      "path": "shared/skill/clarify-it/references/philosophy.md"
+      "path": "src/skill/clarify-it/references/philosophy.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-philosophy-positioning",
-      "path": "shared/skill/clarify-it/references/philosophy.md"
+      "path": "src/skill/clarify-it/references/philosophy.md"
     }
   ]
 }
