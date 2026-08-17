@@ -44,9 +44,6 @@ docs/
 `docs/philosophy.md` が理念の正本で、`src/references/philosophy.md` は同じ理念を Skill 実行時の参照向けに
 圧縮・改編した派生です。理念そのものを変更する場合は `docs/` を起点にしてください。
 
-`docs/` は Gunte の管理外のため、`docs/` と `src/` の乖離は `gunte check` では検知されません。src 側へ
-反映するかどうかは、原文を改訂するたびに個別に判断します。
-
 ## Philosophy
 
 `clarify-it` の設計判断は [`docs/philosophy.md`](./docs/philosophy.md) の理念に従います。中核は次の一文です。
@@ -78,6 +75,9 @@ gunte lock    # gunte.lock.json を更新する
 
 contract は `contracts.toml` で宣言します。Gunte は利用者側の dependency ではなく、この repository で Skill を
 生成・検証するための道具です。
+
+`docs/` は Gunte の管理外のため、`docs/` と `src/` の乖離は `gunte check` では検知されません。src 側へ
+反映するかどうかは、原文を改訂するたびに個別に判断します。
 
 ## License
 
