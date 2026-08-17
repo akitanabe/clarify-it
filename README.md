@@ -32,7 +32,7 @@ skills/clarify-it/
 
 ## Development
 
-`skills/` 配下は [Gunte](https://github.com/akitanabe/gunte) の生成物です。直接編集せず、`src/clarify-it/` の
+`skills/` 配下は [Gunte](https://github.com/akitanabe/gunte) の生成物です。直接編集せず、`src/` の
 source を変更してから再生成してください。
 
 ```bash

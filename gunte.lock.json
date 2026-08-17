@@ -3,8 +3,8 @@
   "semantic_inputs": [
     "gunte.toml",
     "contracts.toml",
-    "src/clarify-it/SKILL.md",
-    "src/clarify-it/references/philosophy.md"
+    "src/SKILL.md",
+    "src/references/philosophy.md"
   ],
   "contracts": [
     {
@@ -244,67 +244,67 @@
     {
       "kind": "span",
       "id": "clarify-it-invocation",
-      "path": "src/clarify-it/SKILL.md"
+      "path": "src/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-start-boundary",
-      "path": "src/clarify-it/SKILL.md"
+      "path": "src/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-normative-hierarchy",
-      "path": "src/clarify-it/SKILL.md"
+      "path": "src/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-philosophy-reference",
-      "path": "src/clarify-it/SKILL.md"
+      "path": "src/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-responsibility",
-      "path": "src/clarify-it/SKILL.md"
+      "path": "src/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-human-decision-point",
-      "path": "src/clarify-it/SKILL.md"
+      "path": "src/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-decision-context",
-      "path": "src/clarify-it/SKILL.md"
+      "path": "src/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-method",
-      "path": "src/clarify-it/SKILL.md"
+      "path": "src/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-completion",
-      "path": "src/clarify-it/SKILL.md"
+      "path": "src/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-action-boundary",
-      "path": "src/clarify-it/SKILL.md"
+      "path": "src/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-casebook",
-      "path": "src/clarify-it/SKILL.md"
+      "path": "src/SKILL.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-philosophy-introduction",
-      "path": "src/clarify-it/references/philosophy.md"
+      "path": "src/references/philosophy.md"
     },
     {
       "kind": "span",
       "id": "clarify-it-philosophy-positioning",
-      "path": "src/clarify-it/references/philosophy.md"
+      "path": "src/references/philosophy.md"
     }
   ]
 }
