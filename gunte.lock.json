@@ -44,20 +44,20 @@
       "sha256": "c010b01fcb18690c777ce4d37cd7eeae07c4f846517b3681e7fddb82837b6464"
     },
     {
-      "id": "clarify-it-material-fact-b74b004846d8",
-      "sha256": "cddccd41a1813699098af38bce2f10e4bb65991911ee28915fb35f2383edfb26"
+      "id": "clarify-it-material-fact-8725846cdbf3",
+      "sha256": "a59396970303ca31ae91885094842a74ede88c359cf092f37898873b76086b31"
     },
     {
       "id": "clarify-it-context-f20c74f92169",
       "sha256": "95fcc11b672c28e2cec379a1a7106c788b8cb14be2ad84466aa5ff7ee1416428"
     },
     {
-      "id": "clarify-it-context-cdacbe865a9b",
-      "sha256": "277b8ac6c6ccb076aa5d138a73818f1b37ebf76c4e22c361e112b4a756b40a8f"
+      "id": "clarify-it-context-717f823309bb",
+      "sha256": "abd2daf989b957863d218b2c473aa0c7a73d0a5914c7ae39b4493cb5defd2ee1"
     },
     {
-      "id": "clarify-it-acceptance-30249129d89c",
-      "sha256": "3edb020942dc4c880f24b56e0448dee0bb2f48320d6cdd2566681cb0b251eac0"
+      "id": "clarify-it-acceptance-58f7bcb8a100",
+      "sha256": "c64844caa44195b387ad1d84157e0d5afda251315489ec40549f0f2136e38b18"
     },
     {
       "id": "clarify-it-minimal-transition-d6894a7e8b94",
@@ -76,8 +76,8 @@
       "sha256": "2afd2305c1125be5c6ee1fbf2e99b5fb7a829bc8034b88c76b1fc0fb45e073cf"
     },
     {
-      "id": "clarify-it-ok-recommendation-8c72517307fa",
-      "sha256": "cee7c39524091afc1f6b0fb5057dbc04e3bf5befb138c39c7b0c29f9d4eab8cb"
+      "id": "clarify-it-ok-recommendation-a3ed66224730",
+      "sha256": "a8204511822c6a21056053ee132ae8bed448b74e16261de0a77f651089a5e89f"
     },
     {
       "id": "clarify-it-reevaluate-70e629d0b926",
@@ -104,8 +104,8 @@
       "sha256": "10482a65b6b4be8fd4d2c03b393d0d7675bd2cbfb98bee9b1732e46c3998b961"
     },
     {
-      "id": "clarify-it-casebook-e9626df849ae",
-      "sha256": "6f936b7d3902cccf178cf34c3150ef1aab903f9ef0350abc77fdeebccbf7804b"
+      "id": "clarify-it-casebook-4278554c5a47",
+      "sha256": "2c6740d8a500eb674e795df255cd3213d9909daf15bfbf43eafb07b655159706"
     },
     {
       "id": "clarify-it-no-external-loader",
@@ -224,8 +224,8 @@
       "sha256": "d178404403c62ac935dd5cb78eab4d9b319f8a24c000e7db57f9d5a8022137c4"
     },
     {
-      "id": "clarify-it-presentation-policy-597069552460",
-      "sha256": "6ab5715ab11638b71dc81f76bdd4360acf34f1473bdcc9a2d8ed79ef3cc2370f"
+      "id": "clarify-it-presentation-policy-48dda54ccbc2",
+      "sha256": "a0543a1d019160e09c1382ca4c7261992dce84b3aec6b20ca6bd216b81f1a14b"
     },
     {
       "id": "clarify-it-selection-no-score-a55549396c92",
