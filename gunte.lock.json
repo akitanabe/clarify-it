@@ -40,20 +40,48 @@
       "sha256": "7e1ed1f2f488206a00b0f23fdf68e22a51fca7b968f1de3661220424a0cf2934"
     },
     {
+      "id": "clarify-it-human-held-01f0b6d894ee",
+      "sha256": "c010b01fcb18690c777ce4d37cd7eeae07c4f846517b3681e7fddb82837b6464"
+    },
+    {
+      "id": "clarify-it-material-fact-8725846cdbf3",
+      "sha256": "a59396970303ca31ae91885094842a74ede88c359cf092f37898873b76086b31"
+    },
+    {
       "id": "clarify-it-context-f20c74f92169",
       "sha256": "95fcc11b672c28e2cec379a1a7106c788b8cb14be2ad84466aa5ff7ee1416428"
+    },
+    {
+      "id": "clarify-it-context-717f823309bb",
+      "sha256": "abd2daf989b957863d218b2c473aa0c7a73d0a5914c7ae39b4493cb5defd2ee1"
+    },
+    {
+      "id": "clarify-it-acceptance-58f7bcb8a100",
+      "sha256": "c64844caa44195b387ad1d84157e0d5afda251315489ec40549f0f2136e38b18"
+    },
+    {
+      "id": "clarify-it-minimal-transition-d6894a7e8b94",
+      "sha256": "9ad986b388d6416463f38d85023a2d0d63623eebe40e98c7f30f15ab4dfc4e9b"
     },
     {
       "id": "clarify-it-method-0931f629e4d9",
       "sha256": "2c05f965e10de8ba7add399d3da3d4a324b505842cde39bcb39313b49d14cc44"
     },
     {
-      "id": "clarify-it-reconstruct-ebd6f679e8f8",
-      "sha256": "b196afe6ba71d2effb64e04664d6997ff22f19c9e6530741296a80eb45ab6e93"
+      "id": "clarify-it-reconstruct-07bcd9bc21cb",
+      "sha256": "28192c0a113abdc6aefe5f116544ca4abf0c38b8bfb5d44173a19c1708fd69d4"
     },
     {
-      "id": "clarify-it-ok-recommendation-351ba20c50f8",
-      "sha256": "41c21e91dabd8044e526e7b66282a4b5cc61d3c504c5bff8e212e37ca6067b8b"
+      "id": "clarify-it-resolve-material-91c4fcf4e2dc",
+      "sha256": "2afd2305c1125be5c6ee1fbf2e99b5fb7a829bc8034b88c76b1fc0fb45e073cf"
+    },
+    {
+      "id": "clarify-it-ok-recommendation-a3ed66224730",
+      "sha256": "a8204511822c6a21056053ee132ae8bed448b74e16261de0a77f651089a5e89f"
+    },
+    {
+      "id": "clarify-it-reevaluate-70e629d0b926",
+      "sha256": "83f8b4b8aa8f950999ffdb1a4bc5589c9abab6a8422cf69d7966a4faac8f4575"
     },
     {
       "id": "clarify-it-recommendation-update-a40d00761522",
@@ -76,8 +104,8 @@
       "sha256": "10482a65b6b4be8fd4d2c03b393d0d7675bd2cbfb98bee9b1732e46c3998b961"
     },
     {
-      "id": "clarify-it-casebook-bb598c459c49",
-      "sha256": "8c60d455e538af1cc890f46f64f3ff72671fe1621f4b86a6eec4bf9760ec4652"
+      "id": "clarify-it-casebook-4278554c5a47",
+      "sha256": "2c6740d8a500eb674e795df255cd3213d9909daf15bfbf43eafb07b655159706"
     },
     {
       "id": "clarify-it-no-external-loader",
@@ -196,8 +224,8 @@
       "sha256": "d178404403c62ac935dd5cb78eab4d9b319f8a24c000e7db57f9d5a8022137c4"
     },
     {
-      "id": "clarify-it-presentation-policy-8525718f3c22",
-      "sha256": "600735db30319d7feaf68988d21473e53e09c051e99fa378107b05e07aa8e260"
+      "id": "clarify-it-presentation-policy-48dda54ccbc2",
+      "sha256": "a0543a1d019160e09c1382ca4c7261992dce84b3aec6b20ca6bd216b81f1a14b"
     },
     {
       "id": "clarify-it-selection-no-score-a55549396c92",
