@@ -58,26 +58,18 @@ pattern = '''Agent が答えを知らない、
 技術的調査が不足している、または複数の実装案があるというだけでは Human Decision Point にしない。'''
 applies_to = ["skills"]
 
-[contracts.clarify-it-human-held-3694b046c201]
+[contracts.clarify-it-human-held-01f0b6d894ee]
 kind = "requires"
 slice = "clarify-it-human-decision-point"
-pattern = '''Human にのみ保持されている既存事実・制約の確認は Human Decision Point ではなく、その確認を価値判断として提示しない。必要な場合は、
-現在の判断に必要な範囲の事実的な文脈として確認する。'''
+pattern = "Human にのみ保持される既存事実・制約は Human Decision Point ではなく、必要な範囲の factual context として確認する。"
 applies_to = ["skills"]
 
-[contracts.clarify-it-domain-language-bc4b2b299778]
+[contracts.clarify-it-material-fact-b74b004846d8]
 kind = "requires"
-slice = "clarify-it-human-decision-point"
-pattern = '''Human に情報提供または判断を求める発話は、`clarify-it` の内部語彙の理解を前提としない。内部語彙自体が議題でない限り、何が未確定または
-判断対象か、それが現在の目的へなぜ影響するか、Human に何を提供または判断してほしいかを、対象領域の言葉で示す。'''
-applies_to = ["skills"]
-
-[contracts.clarify-it-material-fact-1a6bfeebfe09]
-kind = "requires"
-slice = "clarify-it-human-decision-point"
-pattern = '''Human に判断を求める前、Agent 自身が判断を確定する前、または `Completed` とする前に、現在の判断・責任境界・完了を実質的に変え得る、
-所在が明らかで現在取得可能な事実があれば、さらなる概念的推論より先にその関係を確認する。対象は visible / referenced / materially relevant /
-retrievable な source に限定し、exhaustive search は要求しない。'''
+slice = "clarify-it-responsibility"
+pattern = '''Agent は、Human に判断を求める前、自身の判断を確定する前、または `Completed` とする前に、現在の判断・責任境界・完了を
+実質的に変え得る visible / referenced / materially relevant / retrievable な source が現在取得可能なら、exhaustive search はせず、
+概念的推論より先にその事実との関係を確認する。'''
 applies_to = ["skills"]
 
 [contracts.clarify-it-context-f20c74f92169]
@@ -86,26 +78,23 @@ slice = "clarify-it-decision-context"
 pattern = "一度に提示するのは一つの独立した decision context とする。"
 applies_to = ["skills"]
 
-[contracts.clarify-it-context-23a6833ea2a2]
+[contracts.clarify-it-context-cdacbe865a9b]
 kind = "requires"
 slice = "clarify-it-decision-context"
-pattern = '''新しく発見した問題・改善候補は、正しい、有用、実行可能であることだけを理由に現在の decision context へ取り込まない。その解決が現在の
-目的、Human の判断、責任境界、または完了条件を実質的に変える場合だけ取り込み、それ以外は current clarification の未決事項から分離し、
-必要な場合だけ follow-up candidate として caller / Human へ返す。現在の clarification の完了条件には含めない。'''
+pattern = '''新しい問題・改善候補は、目的・Human の判断・責任境界・完了条件を実質的に変える場合だけ current context に取り込み、それ以外は未決事項と
+完了条件から分離し、必要な場合だけ caller / Human へ follow-up candidate として返す。'''
 applies_to = ["skills"]
 
-[contracts.clarify-it-acceptance-eeeee4e62843]
+[contracts.clarify-it-acceptance-30249129d89c]
 kind = "requires"
 slice = "clarify-it-decision-context"
-pattern = '''短い承認は、提示中の一意な decision context の採否にのみ適用し、意思決定モデル全体の妥当性確認や、追加の Reconstruction を正当化する
-evidence として扱わない。'''
+pattern = "短い承認は提示中の一意な context の採否に限り、モデル全体や Reconstruction の妥当性へ拡張しない。"
 applies_to = ["skills"]
 
-[contracts.clarify-it-minimal-transition-99863fd0cd3e]
+[contracts.clarify-it-minimal-transition-d6894a7e8b94]
 kind = "requires"
 slice = "clarify-it-decision-context"
-pattern = '''次の問いがそれだけでは不連続に見え、Human が複数 turn の文脈を再構築する必要がある場合は、同じ turn 内に必要最小限の現在理解または遷移理由を
-添える。定型 summary、内部 state dump、確認専用 turn は要求しない。'''
+pattern = "次の問いが不連続なら、同じ turn に必要最小限の現在理解または遷移理由を添え、定型 summary、内部 state dump、確認専用 turn は要求しない。"
 applies_to = ["skills"]
 
 [contracts.clarify-it-method-0931f629e4d9]
@@ -114,44 +103,29 @@ slice = "clarify-it-method"
 pattern = "`Frame → Resolve → Select & Present → Integrate → Reevaluate` を標準操作として使う。これは固定 state machine ではない。"
 applies_to = ["skills"]
 
-[contracts.clarify-it-reconstruct-ebd6f679e8f8]
+[contracts.clarify-it-reconstruct-07bcd9bc21cb]
 kind = "requires"
 slice = "clarify-it-method"
-pattern = "まだ信頼できる地点まで戻り、意思決定モデルを再構成する。"
+pattern = '''信頼できなくなった場合は、まだ信頼できる地点まで戻り、意思決定モデルを再構成し、影響評価後も有効な判断・前提・境界を保持して再承認を求めない。'''
 applies_to = ["skills"]
 
-[contracts.clarify-it-reconstruction-e8ed325bd982]
+[contracts.clarify-it-resolve-material-91c4fcf4e2dc]
 kind = "requires"
 slice = "clarify-it-method"
-pattern = "Reconstruction では影響範囲を評価し、その結果、現在も有効であると確認できた判断・前提・境界を保持し、再承認を求めない。"
+pattern = "2. Resolve: 調査、分析、技術的導出、反証確認によって、該当する material fact を概念的推論に先行させながら Agent が解消すべき不確実性を減らす。"
 applies_to = ["skills"]
 
-[contracts.clarify-it-resolve-material-1bae16278764]
+[contracts.clarify-it-ok-recommendation-8c72517307fa]
 kind = "requires"
 slice = "clarify-it-method"
-pattern = '''Resolve では、visible / referenced / materially relevant / retrievable な source に、現在の判断・責任境界・完了を実質的に変え得る事実が
-ある場合、さらなる概念的推論より先にその関係を確認する。これは exhaustive search を要求しない。'''
+pattern = '''短い `ok` は、応答対象の context が一意な場合だけその採否として統合し、何への応答か不明なら確認する。モデル全体の妥当性や Reconstruction の
+evidence には拡張しない。'''
 applies_to = ["skills"]
 
-[contracts.clarify-it-ok-recommendation-351ba20c50f8]
+[contracts.clarify-it-reevaluate-70e629d0b926]
 kind = "requires"
 slice = "clarify-it-method"
-pattern = "短い `ok` は、応答対象の context が一意な場合だけその判断として統合する。"
-applies_to = ["skills"]
-
-[contracts.clarify-it-method-acceptance-68ca43ece782]
-kind = "requires"
-slice = "clarify-it-method"
-pattern = '''この承認は提示中の context の採否にのみ適用し、意思決定モデル全体の妥当性確認や、追加の Reconstruction を正当化する
-evidence として扱わない。'''
-applies_to = ["skills"]
-
-[contracts.clarify-it-reevaluate-11b54590c8a9]
-kind = "requires"
-slice = "clarify-it-method"
-pattern = '''新しく発見した問題・改善候補は、正しい、有用、実行可能であることだけを理由に現在の decision context へ取り込まない。その解決が現在の
-目的、Human の判断、責任境界、または完了条件を実質的に変える場合だけ取り込み、それ以外は current clarification の未決事項から分離し、
-必要な場合だけ follow-up candidate として caller / Human へ返す。'''
+pattern = "5. Reevaluate: queue と依存、新規発見の current context への所属、完了前の material fact を再評価し、次の context、完了、または停止を決める。"
 applies_to = ["skills"]
 
 [contracts.clarify-it-recommendation-update-a40d00761522]
@@ -186,13 +160,11 @@ pattern = '''成果物や Issue の編集、実装、委譲、コマンド実行
 後続 Action の開始は行わない。'''
 applies_to = ["skills"]
 
-[contracts.clarify-it-casebook-d7b428679ca8]
+[contracts.clarify-it-casebook-e9626df849ae]
 kind = "requires"
 slice = "clarify-it-casebook"
-pattern = '''- 複数案がある: 技術的根拠で優劣を導けるなら Agent が推奨を導き、案の数だけで Human に聞かない。
-- 技術的優劣を導けず価値判断だけが残る: 案の数ではなく、一つの decision context として Human に提示する。
-- Agent が知らない: 調査可能な不足を価値判断へ変換せず、まず調べる。
-- 取得可能な material fact: 概念的推論より先に、visible / referenced / materially relevant / retrievable な source との関係を確認する。
+pattern = '''- 複数案がある: 技術的根拠で優劣を導けるなら Agent が選び、価値判断だけが残る場合だけ一つの context として Human に提示する。
+- Agent が知らない: 調査可能な不足を価値判断へ変換せず、取得可能な material fact を概念的推論より先に確認する。
 - 判断が強く結合する: 別々に答えると矛盾する判断は一つの decision context にまとめる。
 - 上位概念が変わる: 新しい目的で古い分解が無効になれば、古い queue を捨てて再構成する。
 - 隣接する有用な発見: 現在の目的、Human の判断、責任境界、完了条件を実質的に変えない候補は current context から分離する。
@@ -399,12 +371,11 @@ pattern = '''根拠ある優劣を導ける場合だけ推奨と理由を示し�
 判断を分ける価値軸を示す。'''
 applies_to = ["skills"]
 
-[contracts.clarify-it-presentation-policy-8525718f3c22]
+[contracts.clarify-it-presentation-policy-597069552460]
 kind = "requires"
 slice = "clarify-it-decision-context"
-pattern = '''Human Decision Point などの内部の構造・判定用語は、意思決定モデルと caller / projection の判定用語として維持し、意味を rename / redefine しない。
-Human への発話では、内部語彙を必要がない限り露出させず、判断対象と文脈に応じて自然な表現を Agent が選ぶ。例えば「次に決めたいのは〜です」「ここで判断いただきたいのは〜です」「残っている判断は〜です」などである。
-この自然化は責務境界と意味を維持したまま行い、固定的な内部語彙→対話語彙 dictionary は定義しない。'''
+pattern = '''内部語彙は内部判定用語として維持するが、内部語彙自体が議題でない限り Human に理解を要求しない。情報提供または判断を求める発話では、
+判断対象、目的への影響、求める入力を対象領域の言葉で示し、固定的な内部語彙→対話語彙 dictionary は定義しない。'''
 applies_to = ["skills"]
 
 [contracts.clarify-it-selection-no-score-a55549396c92]
