@@ -69,6 +69,9 @@ docs/
 
 ## Development
 
+Skill source、reference、contract、test、lint rule を変更する場合は、
+[`skill-coding-rules.md`](./skill-coding-rules.md) の開発規範に従ってください。
+
 `skills/` 配下は [Gunte](https://github.com/akitanabe/gunte) の生成物です。直接編集せず、`src/` の
 source を変更してから再生成してください。
 
