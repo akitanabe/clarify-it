@@ -1,5 +1,9 @@
 # Repository Guidelines
 
+## 開発規範
+
+変更前に [`skill-coding-rules.md`](./skill-coding-rules.md) を参照してください。clarify-it の意味や責務を変更する場合は、`docs/philosophy.md` と `docs/specification.md` も確認します。完了前に diff を `skill-coding-rules.md` に照らしてレビューしてください。
+
 ## プロジェクト構成
 
 `src/` は配布 Skill の canonical runtime source です。`src/SKILL.md` と `src/references/` を編集し、`skills/clarify-it/` を再生成してください。生成物である `skills/` は直接編集しません。
