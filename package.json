@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "lint": "textlint skills/clarify-it/SKILL.md"
+    "lint": "textlint --rulesdir lint/rules skills/clarify-it/SKILL.md",
+    "test": "node --test lint/rules.test.mjs"
   },
   "devDependencies": {
     "textlint": "15.8.0",
