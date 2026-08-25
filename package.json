@@ -8,6 +8,6 @@
   },
   "devDependencies": {
     "textlint": "15.8.0",
-    "textlint-rule-preset-skill-lint": "git+https://github.com/akitanabe/skill-lint.git#b1fe6b577c00dccaec6a3314dd9d2934c3d457ca"
+    "textlint-rule-preset-skill-lint": "git+https://github.com/akitanabe/skill-lint.git#d4ab485ec3687be97cc04614900493c19d4c7cb8"
   }
 }
