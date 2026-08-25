@@ -86,6 +86,7 @@ test("current SKILL lint config loads common and clarify-it-specific rules toget
     .rule.map(({ id }) => id);
 
   assert.deepEqual([...ruleIds].sort(), [
+    "skill-lint/historical-defense-instruction",
     "skill-lint/nested-normative-instruction",
     "skill-lint/excessive-conditional-branches",
     "skill-lint/overloaded-instruction",
