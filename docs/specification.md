@@ -20,7 +20,8 @@
 
 > **Human の有限な認知資源を、本当に Human が決める必要がある価値判断へ集中させ、その判断品質を維持すること。**
 
-本 Specification は `clarify-it` への適合性を定義する唯一の規範源である。
+本 Specification は、`clarify-it` の設計文書層における詳細な適合性を定義する規範源である。
+配布 Skill の runtime normative surface は `src/SKILL.md` に保持する。
 
 Philosophy、Method、Casebook は本 Specification を説明・実現・具体化するが、これを上書きしない。
 
@@ -801,7 +802,7 @@ Agent は内部では decision context や Reconstruction を用いているが�
 
 # Appendix — Document Boundary
 
-`clarify-it` の正式文書体系は次の二文書を基本とする。
+`clarify-it` の設計文書体系は、次の二文書を基本とする。
 
 - `philosophy.md`
   - なぜこの設計なのか

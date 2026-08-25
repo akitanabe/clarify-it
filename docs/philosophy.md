@@ -4,7 +4,8 @@
 
 `clarify-it` Philosophy は、`clarify-it` が**なぜこの構造を採用するのか**を示す。
 
-本書は非規範的である。`clarify-it` への適合性は `specification.md` の Specification が定義する。
+本書は非規範的である。設計文書層における `clarify-it` の適合性は、
+`specification.md` の Specification が定義する。
 
 したがって、本書の原則から Specification に書かれていない必須要件を直接導出しない。哲学上重要な原則を適合条件にする必要が生じた場合は、Specification へ明示的に反映する。
 
@@ -276,7 +277,7 @@ Human に判断を求められる事項であっても、それが本当に Huma
 
 ### Specification
 
-`clarify-it` への適合性を定める唯一の規範源。
+設計文書層における `clarify-it` の適合性を定める規範源。
 
 MUST と SHOULD により、外部から確認できる責任と振る舞いを定義する。
 

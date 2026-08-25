@@ -33,16 +33,21 @@ skills/clarify-it/
 
 ## Documents
 
-`docs/` は Skill 化する前の原文です。
+設計思想と詳細仕様の canonical source は `docs/` にあります。`docs/` は設計文書層です。
 
 ```text
 docs/
-├─ philosophy.md      # 基本理念の正本
-└─ specification.md   # Specification / Method / Casebook の原文
+├─ philosophy.md      # 長期的な設計思想の canonical source（非規範）
+└─ specification.md   # maintainer 向け詳細仕様の canonical source
 ```
 
-`docs/philosophy.md` が理念の正本で、`src/references/philosophy.md` は同じ理念を Skill 実行時の参照向けに
-圧縮・改編した派生です。理念そのものを変更する場合は `docs/` を起点にしてください。
+- `docs/philosophy.md` は長期的な設計思想の canonical source です。非規範であり、Skill runtime の新しい要件源にはなりません。
+- `docs/specification.md` は maintainer 向け詳細仕様の canonical source です。
+- `src/SKILL.md` は配布 Skill の canonical runtime source であり、自己完結した runtime normative surface です。
+- `src/references/philosophy.md` は Skill runtime から参照可能な非規範 reference です。
+- `skills/clarify-it/` は `src/` から生成される配布 artifact です。
+
+`docs/specification.md` の意味上の変更は、配布 runtime source である `src/SKILL.md` へ反映します。
 
 ## Philosophy
 
@@ -76,8 +81,7 @@ gunte lock    # gunte.lock.json を更新する
 contract は `contracts.toml` で宣言します。Gunte は利用者側の dependency ではなく、この repository で Skill を
 生成・検証するための道具です。
 
-`docs/` は Gunte の管理外のため、`docs/` と `src/` の乖離は `gunte check` では検知されません。src 側へ
-反映するかどうかは、原文を改訂するたびに個別に判断します。
+`docs/` は Gunte の管理外のため、`docs/` と `src/` の同期は `gunte check` では検知されません。
 
 ## License
 
