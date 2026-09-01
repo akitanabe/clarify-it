@@ -2,7 +2,7 @@
 
 ## 開発規範
 
-変更前に [`skill-coding-rules.md`](./skill-coding-rules.md) を参照してください。clarify-it の意味や責務を変更する場合は、`docs/philosophy.md` と `docs/specification.md` も確認します。完了前に diff を `skill-coding-rules.md` に照らしてレビューしてください。
+変更前に [`skill-coding-rules.md`](./docs/skill-coding-rules.md) を参照してください。clarify-it の意味や責務を変更する場合は、`docs/philosophy.md` と `docs/specification.md` も確認します。完了前に diff を `docs/skill-coding-rules.md` に照らしてレビューしてください。
 
 ## プロジェクト構成
 
