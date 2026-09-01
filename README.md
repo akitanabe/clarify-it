@@ -38,7 +38,8 @@ skills/clarify-it/
 ```text
 docs/
 ├─ philosophy.md      # 長期的な設計思想の canonical source（非規範）
-└─ specification.md   # maintainer 向け詳細仕様の canonical source
+├─ specification.md   # maintainer 向け詳細仕様の canonical source
+└─ skill-coding-rules.md # 開発規範
 ```
 
 - `docs/philosophy.md` は長期的な設計思想の canonical source です。非規範であり、Skill runtime の新しい要件源にはなりません。
@@ -70,7 +71,7 @@ docs/
 ## Development
 
 Skill source、reference、contract、test、lint rule を変更する場合は、
-[`skill-coding-rules.md`](./skill-coding-rules.md) の開発規範に従ってください。
+[`skill-coding-rules.md`](./docs/skill-coding-rules.md) の開発規範に従ってください。
 
 `skills/` 配下は [Gunte](https://github.com/akitanabe/gunte) の生成物です。直接編集せず、`src/` の
 source を変更してから再生成してください。
