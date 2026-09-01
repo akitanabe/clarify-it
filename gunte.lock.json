@@ -60,6 +60,10 @@
       "sha256": "c64844caa44195b387ad1d84157e0d5afda251315489ec40549f0f2136e38b18"
     },
     {
+      "id": "clarify-it-ex-48f3f113396c",
+      "sha256": "dce19cc70a6758a133ce945b5899ab63e5f567e5d509459f3129f84f7644fb77"
+    },
+    {
       "id": "clarify-it-minimal-transition-d6894a7e8b94",
       "sha256": "9ad986b388d6416463f38d85023a2d0d63623eebe40e98c7f30f15ab4dfc4e9b"
     },
@@ -238,6 +242,10 @@
     {
       "id": "clarify-it-evidence-identity-6a3986f41749",
       "sha256": "a8ea8657b0eaca308131276fff1ce83852369a652f35f6867bfe9abbf2ec9ac1"
+    },
+    {
+      "id": "clarify-it-reexplanation-81fac5c787e2",
+      "sha256": "e2705419c7e0dd7a2e2120c0a8d8d67e2de2830e71239792a97096cfb0375e1c"
     },
     {
       "id": "clarify-it-consistency-diff-8745d0b78738",
