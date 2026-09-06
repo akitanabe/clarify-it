@@ -4,7 +4,8 @@
     "gunte.toml",
     "contracts.toml",
     "src/SKILL.md",
-    "src/references/philosophy.md"
+    "src/references/philosophy.md",
+    "src/references/human-facing-projection.md"
   ],
   "contracts": [
     {
@@ -72,6 +73,10 @@
       "sha256": "2c05f965e10de8ba7add399d3da3d4a324b505842cde39bcb39313b49d14cc44"
     },
     {
+      "id": "clarify-it-human-facing-projection-82ba2a5da1c0",
+      "sha256": "bb162363b3b17ea34b3deeac263d927e43a0910c7692b890e75fc2ba131d9aa4"
+    },
+    {
       "id": "clarify-it-reconstruct-07bcd9bc21cb",
       "sha256": "28192c0a113abdc6aefe5f116544ca4abf0c38b8bfb5d44173a19c1708fd69d4"
     },
@@ -104,12 +109,16 @@
       "sha256": "38da3e547585a13070f5e3feaa79b215a8eceb1c809f9ab59efc8c380f0b7593"
     },
     {
+      "id": "clarify-it-human-facing-projection-completion-6a9fef14fda3",
+      "sha256": "127f8b996516ddf87b998248c7e82ab976a93c1e9bd9ace05cac86643ef2adac"
+    },
+    {
       "id": "clarify-it-action-boundary-9a657d37cb69",
       "sha256": "10482a65b6b4be8fd4d2c03b393d0d7675bd2cbfb98bee9b1732e46c3998b961"
     },
     {
-      "id": "clarify-it-casebook-4278554c5a47",
-      "sha256": "2c6740d8a500eb674e795df255cd3213d9909daf15bfbf43eafb07b655159706"
+      "id": "clarify-it-casebook-7e3a833b6316",
+      "sha256": "5d023f933dc1ba3eceada207b13845323b27ed36d683fb20df0c8e8f2f2a331f"
     },
     {
       "id": "clarify-it-no-external-loader",
@@ -228,8 +237,8 @@
       "sha256": "d178404403c62ac935dd5cb78eab4d9b319f8a24c000e7db57f9d5a8022137c4"
     },
     {
-      "id": "clarify-it-presentation-policy-48dda54ccbc2",
-      "sha256": "a0543a1d019160e09c1382ca4c7261992dce84b3aec6b20ca6bd216b81f1a14b"
+      "id": "clarify-it-presentation-policy-48ecf7226df4",
+      "sha256": "6f781a7fc05dd851344705897e2ba7bebc7b0f145fd683b528eb72c363895a80"
     },
     {
       "id": "clarify-it-selection-no-score-a55549396c92",
@@ -310,6 +319,11 @@
     {
       "kind": "span",
       "id": "clarify-it-decision-context",
+      "path": "src/SKILL.md"
+    },
+    {
+      "kind": "span",
+      "id": "clarify-it-human-facing-projection",
       "path": "src/SKILL.md"
     },
     {

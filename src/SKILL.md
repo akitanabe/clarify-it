@@ -82,11 +82,16 @@ Human にのみ保持される既存事実・制約は Human Decision Point で�
 自然言語も同様に扱う。
 
 Human Decision Point などの内部の構造・判定用語は、意思決定モデルと caller / projection の判定用語として維持し、意味を rename / redefine しない。
-内部語彙自体が議題でない限り Human に理解を要求しない。情報提供または判断を求める発話では、
-判断対象、目的への影響、求める入力を対象領域の言葉で示し、固定的な内部語彙→対話語彙 dictionary は定義しない。
+内部語彙自体が議題でない限り、その理解を Human に要求しない。caller は、Human に判断を求める意味、目的への影響、求める入力を確定する。
+確定済みの意味を対象領域の言葉で自然に表現する責務は Human-facing Projection に置き、固定的な内部語彙→対話語彙 dictionary は定義しない。
 <!-- @/contract -->
 
 ## Method
+
+<!-- @contract clarify-it-human-facing-projection -->
+`Human-facing Projection` は、caller が意味・構成・tone を確定した文章の表現だけを整える共有 Method である。decision context、比較対象・判断軸、
+選択肢、判断材料、推奨と理由、提示順、tone の owner にはならず、独立した workflow phase / state として扱わない。
+<!-- @/contract -->
 
 <!-- @contract clarify-it-method -->
 `Frame → Resolve → Select & Present → Integrate → Reevaluate` を標準操作として使う。これは固定 state machine ではない。
@@ -94,7 +99,8 @@ Human Decision Point などの内部の構造・判定用語は、意思決定�
 1. Frame: 現在の目的、観測事実、一時前提、未解決事項と依存を一つの意思決定モデルとして捉える。
 2. Resolve: 調査、分析、技術的導出、反証確認によって、該当する material fact を概念的推論に先行させながら Agent が解消すべき不確実性を減らす。
 3. Select & Present: Human の価値判断だけが残る一つの decision context を選び、固定スコアリングなしに、より上位の判断、後続判断を
-   多く消去・拘束できるもの、判断空間を安定させるもの、重要な不整合を解消するものを原則として優先し、圧縮して提示する。
+   多く消去・拘束できるもの、判断空間を安定させるもの、重要な不整合を解消するものを原則として優先し、圧縮する。伝える意味、提示構成、tone を
+   確定した後、Human-facing Projection を適用して Human へ提示する。
 4. Integrate: Human の応答を局所回答として保存するだけでなく、現在モデルへ再統合し、短い承認は提示中の一意な context の採否としてのみ扱う。
 5. Reevaluate: queue と依存、新規発見の current context への所属、完了前の material fact を再評価し、次の context、完了、または停止を決める。
 
@@ -132,7 +138,9 @@ Human が過剰詳細化を示した場合は局所質問を擁護せず、一�
 
 `Completed` では質問履歴や固定 schema ではなく、現在の一貫した意思決定モデルを、対象に自然な形式で caller / Human へ
 返す。目的、現在の前提、主要な判断と根拠、重要な依存、棄却した主要代替、残存する不確実性を、対象に必要な範囲で
-再構成する。現在の前提で成立しない古い判断を無批判に残さず、包含・重複した下位判断を必要に応じて整理する。Human はいつでも
+再構成する。現在の前提で成立しない古い判断を無批判に残さず、包含・重複した下位判断を必要に応じて整理する。caller / Human へ返す説明文には
+Human-facing Projection を適用する。
+Human はいつでも
 対話を停止できる。
 <!-- @/contract -->
 
@@ -155,6 +163,6 @@ Human が過剰詳細化を示した場合は局所質問を擁護せず、一�
 - 大規模な再構成: 意味ある全体像を作る前に早期圧縮せず、依存を捉えてから Human Decision Point を選び、影響評価後も有効な判断・前提・境界を保持する。
 - 正しいが細かすぎる質問: 局所的に正しくても対話全体を過剰詳細化するなら、一段上から再圧縮する。
 - 短い `ok`: 対象 context が一意ならその採否だけを統合し、一意でなければ確認する。モデル全体の妥当性や追加の Reconstruction の根拠には拡張しない。
-- 内部語彙の投影: Human には判断対象、目的への影響、求める入力を対象領域の言葉で示す。
+- 内部語彙の投影: Human-facing Projection は、clarify-it が確定した判断対象、目的への影響、求める入力を、Human が使う対象領域の言葉で表現する。
 - 最終結果: 対話履歴の列ではなく、現在の一貫した意思決定モデルを返す。
 <!-- @/contract -->

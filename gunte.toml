@@ -8,6 +8,7 @@ version = "0.1.0"
 files = [
   "src/SKILL.md",
   "src/references/philosophy.md",
+  "src/references/human-facing-projection.md",
 ]
 managed_roots = ["src"]
 
@@ -27,4 +28,9 @@ header = "<!-- Generated from src/. Do not edit directly. -->"
 [[targets.skills.rules]]
 match = "src/references/philosophy.md"
 path = "skills/clarify-it/references/philosophy.md"
+profile = "markdown-v1"
+
+[[targets.skills.rules]]
+match = "src/references/human-facing-projection.md"
+path = "skills/clarify-it/references/human-facing-projection.md"
 profile = "markdown-v1"
