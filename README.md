@@ -25,11 +25,13 @@ Claude Code、Codex、Cursor など Skill に対応した Agent から利用で�
 skills/clarify-it/
 ├─ SKILL.md
 └─ references/
+   ├─ human-facing-projection.md
    └─ philosophy.md
 ```
 
-`SKILL.md` が規範本体で、Specification / Method / Casebook を含みます。`SKILL.md` 単体で完結して動作し、
-`references/philosophy.md` は矛盾や想定外ケースで設計意図を確認するための非規範 reference です。
+`SKILL.md` が規範本体で、Specification / Method / Casebook を含みます。`SKILL.md` 単体で完結して動作します。
+`references/human-facing-projection.md` は文章表現だけを整える共有 Method の詳細境界、`references/philosophy.md` は
+矛盾や想定外ケースで設計意図を確認するための非規範 reference です。
 
 ## Documents
 
@@ -45,6 +47,7 @@ docs/
 - `docs/philosophy.md` は長期的な設計思想の canonical source です。非規範であり、Skill runtime の新しい要件源にはなりません。
 - `docs/specification.md` は maintainer 向け詳細仕様の canonical source です。
 - `src/SKILL.md` は配布 Skill の canonical runtime source であり、自己完結した runtime normative surface です。
+- `src/references/human-facing-projection.md` は Human-facing Projection の canonical reference です。
 - `src/references/philosophy.md` は Skill runtime から参照可能な非規範 reference です。
 - `skills/clarify-it/` は `src/` から生成される配布 artifact です。
 
