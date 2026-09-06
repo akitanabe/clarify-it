@@ -1,9 +1,6 @@
 # Human-facing Projection
 
-`Human-facing Projection` は、caller が意味・構成・tone を確定した文章を、実際の読者が自然に理解できる表現へ整える共有 Method です。
-
-文章の表現を扱いますが、文章が伝える意味と、caller が決めた構成の owner にはなりません。`clarify-it` では独立した workflow phase / state ではなく、
-`Select & Present` の提示直前と `Completed` の説明を返す前に、必要な範囲で軽く適用します。
+`Human-facing Projection` は、文章を実際の読者が自然に理解できる表現へ整える共有 Method です。
 
 ## Inputs and ownership
 
@@ -68,13 +65,9 @@ code、command、path、identifier、machine-readable output、source quotation 
 
 ### Scope in clarify-it
 
-`clarify-it` では、対話中の説明と `Completed` 時の Human-facing な説明に適用します。後から単独で判断根拠にする成果物の strictness や利用条件は、
+`clarify-it` では、Human へ向けた対話の説明に適用します。後から単独で判断根拠にする成果物の strictness や利用条件は、
 この Method の責務に含めず、必要なら別の caller が決めます。
 
 ## Autonomous Method boundary
 
 文・段落の言い換えには複数の適切な結果があり、Human-facing Projection は autonomous な Method です。
-
-Method は意味・構成・tone の判断を caller から引き取りません。
-
-固定 Procedure、Programmatic Flow、辞書置換器、読みやすさ validator、score、固定 schema は追加しません。

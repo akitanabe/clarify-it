@@ -118,6 +118,12 @@ pattern = '''`Human-facing Projection` は、caller が意味・構成・tone �
 選択肢、判断材料、推奨と理由、提示順、tone の owner にはならず、独立した workflow phase / state として扱わない。'''
 applies_to = ["skills"]
 
+[contracts.clarify-it-human-facing-projection-90950d9b66bd]
+kind = "requires"
+slice = "clarify-it-human-facing-projection"
+pattern = "具体的な表現操作と安全境界の詳細は `references/human-facing-projection.md` を参照する。"
+applies_to = ["skills"]
+
 [contracts.clarify-it-reconstruct-07bcd9bc21cb]
 kind = "requires"
 slice = "clarify-it-method"
@@ -393,12 +399,12 @@ pattern = '''根拠ある優劣を導ける場合だけ推奨と理由を示し�
 判断を分ける価値軸を示す。'''
 applies_to = ["skills"]
 
-[contracts.clarify-it-presentation-policy-48ecf7226df4]
+[contracts.clarify-it-presentation-policy-2138dd69f5de]
 kind = "requires"
 slice = "clarify-it-decision-context"
 pattern = '''Human Decision Point などの内部の構造・判定用語は、意思決定モデルと caller / projection の判定用語として維持し、意味を rename / redefine しない。
 内部語彙自体が議題でない限り、その理解を Human に要求しない。caller は、Human に判断を求める意味、目的への影響、求める入力を確定する。
-確定済みの意味を対象領域の言葉で自然に表現する責務は Human-facing Projection に置き、固定的な内部語彙→対話語彙 dictionary は定義しない。'''
+確定済みの意味を対象領域の言葉で自然に表現する責務は Human-facing Projection に置く。'''
 applies_to = ["skills"]
 
 [contracts.clarify-it-selection-no-score-a55549396c92]
@@ -412,6 +418,13 @@ kind = "requires"
 slice = "clarify-it-method"
 pattern = '''より上位の判断、後続判断を
    多く消去・拘束できるもの、判断空間を安定させるもの、重要な不整合を解消するものを原則として優先し、'''
+applies_to = ["skills"]
+
+[contracts.clarify-it-selection-02d5e7ffe65a]
+kind = "requires"
+slice = "clarify-it-method"
+pattern = '''伝える意味、提示構成、tone を
+   確定した後、Human-facing Projection を適用して Human へ提示する。'''
 applies_to = ["skills"]
 
 [contracts.clarify-it-evidence-identity-6a3986f41749]

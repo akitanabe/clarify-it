@@ -77,6 +77,10 @@
       "sha256": "bb162363b3b17ea34b3deeac263d927e43a0910c7692b890e75fc2ba131d9aa4"
     },
     {
+      "id": "clarify-it-human-facing-projection-90950d9b66bd",
+      "sha256": "4ba60747fe19952b6445fd53c6f0578ea2a11f9afa29e4169ebe6b58a900934c"
+    },
+    {
       "id": "clarify-it-reconstruct-07bcd9bc21cb",
       "sha256": "28192c0a113abdc6aefe5f116544ca4abf0c38b8bfb5d44173a19c1708fd69d4"
     },
@@ -237,8 +241,8 @@
       "sha256": "d178404403c62ac935dd5cb78eab4d9b319f8a24c000e7db57f9d5a8022137c4"
     },
     {
-      "id": "clarify-it-presentation-policy-48ecf7226df4",
-      "sha256": "6f781a7fc05dd851344705897e2ba7bebc7b0f145fd683b528eb72c363895a80"
+      "id": "clarify-it-presentation-policy-2138dd69f5de",
+      "sha256": "e2617ec7618a99ea181b21347ed3ba7c046c5b2be24368feeadb9caf580c4ca8"
     },
     {
       "id": "clarify-it-selection-no-score-a55549396c92",
@@ -247,6 +251,10 @@
     {
       "id": "clarify-it-selection-priority-6d10483e40e2",
       "sha256": "690de33b512521d7a97de98e4a9803ed9a34c39ecadc71402ad2ea5b06809ced"
+    },
+    {
+      "id": "clarify-it-selection-02d5e7ffe65a",
+      "sha256": "83de3af30ff3915f0efad85bc6bc503bdebe10411d40a4f6bfa3c978cdc3463e"
     },
     {
       "id": "clarify-it-evidence-identity-6a3986f41749",

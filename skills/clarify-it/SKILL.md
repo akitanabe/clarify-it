@@ -71,12 +71,13 @@ Human にのみ保持される既存事実・制約は Human Decision Point で�
 
 Human Decision Point などの内部の構造・判定用語は、意思決定モデルと caller / projection の判定用語として維持し、意味を rename / redefine しない。
 内部語彙自体が議題でない限り、その理解を Human に要求しない。caller は、Human に判断を求める意味、目的への影響、求める入力を確定する。
-確定済みの意味を対象領域の言葉で自然に表現する責務は Human-facing Projection に置き、固定的な内部語彙→対話語彙 dictionary は定義しない。
+確定済みの意味を対象領域の言葉で自然に表現する責務は Human-facing Projection に置く。
 
 ## Method
 
 `Human-facing Projection` は、caller が意味・構成・tone を確定した文章の表現だけを整える共有 Method である。decision context、比較対象・判断軸、
 選択肢、判断材料、推奨と理由、提示順、tone の owner にはならず、独立した workflow phase / state として扱わない。
+具体的な表現操作と安全境界の詳細は `references/human-facing-projection.md` を参照する。
 
 `Frame → Resolve → Select & Present → Integrate → Reevaluate` を標準操作として使う。これは固定 state machine ではない。
 
